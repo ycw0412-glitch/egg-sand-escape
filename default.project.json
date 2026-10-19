@@ -7,6 +7,9 @@
 			"Shared": {
 				"$path": "src/shared"
 			},
+			"EggModel": {
+				"$path": "assets/EggModel.rbxm"
+			},
 			"Remotes": {
 				"$className": "Folder",
 				"Popup": { "$className": "RemoteEvent" },
