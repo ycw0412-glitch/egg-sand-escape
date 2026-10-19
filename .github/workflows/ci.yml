@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install tools (rokit.toml)
+        uses: CompeyDev/setup-rokit@v0.1.2
+
+      - name: Format check
+        run: stylua --check src tests
+
+      - name: Lint
+        run: selene src
+
+      - name: LevelMath tests
+        run: lune run tests/LevelMath.spec.luau

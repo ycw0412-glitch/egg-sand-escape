@@ -1,0 +1,6 @@
+# 프로젝트 도구 버전 고정. `rokit install`로 한 번에 설치한다.
+[tools]
+rojo = "rojo-rbx/rojo@7.4.4"
+selene = "Kampfkarren/selene@0.27.1"
+stylua = "JohnnyMorganz/StyLua@0.20.0"
+lune = "lune-org/lune@0.8.9"

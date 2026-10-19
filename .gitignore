@@ -1,0 +1,15 @@
+# Studio 파일은 저장소에 넣지 않는다 (코드가 원본)
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+*.rbxlx.lock
+
+# 도구가 만드는 파일
+sourcemap.json
+roblox.yml
+/Packages
+/ServerPackages
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,40 @@
+{
+	"name": "egg-sand-escape",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"Shared": {
+				"$path": "src/shared"
+			},
+			"Remotes": {
+				"$className": "Folder",
+				"Popup": { "$className": "RemoteEvent" },
+				"Notify": { "$className": "RemoteEvent" },
+				"LevelUp": { "$className": "RemoteEvent" },
+				"AdminCommand": { "$className": "RemoteEvent" }
+			}
+		},
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"Server": {
+				"$path": "src/server"
+			}
+		},
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"Client": {
+					"$path": "src/client"
+				}
+			}
+		},
+		"Players": {
+			"$className": "Players",
+			"$properties": {
+				"CharacterAutoLoads": false
+			}
+		}
+	}
+}
