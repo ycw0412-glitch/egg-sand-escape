@@ -16,3 +16,6 @@ Thumbs.db
 
 # Blender 자동 백업
 *.blend1
+
+# 녹화 원본
+docs/raw/
