@@ -102,7 +102,8 @@ local function buildCheckpoint(stage, z, y)
 	local spawn = make("SpawnLocation", {
 		Name = "Checkpoint" .. stage,
 		Size = Vector3.new(8, 1, 8),
-		Position = Vector3.new(0, y + 0.5, z + 7),
+		-- 스폰 방향 = 체크포인트의 LookVector. 코스 진행 방향(+Z)을 보게 180도 돌린다.
+		CFrame = CFrame.lookAt(Vector3.new(0, y + 0.5, z + 7), Vector3.new(0, y + 0.5, z + 8)),
 		Color = STAGE_COLORS[stage],
 		Material = Enum.Material.SmoothPlastic,
 		Neutral = true,
