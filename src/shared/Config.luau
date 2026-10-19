@@ -3,9 +3,6 @@
 
 local Config = {}
 
--- 처음 하는 플레이어가 5스테이지를 깨는 목표 시간(분)
-Config.TargetClearMinutes = 30
-
 -- 이동 속도: BaseWalkSpeed + SpeedPerLevel * level, 최대 MaxWalkSpeed
 Config.BaseWalkSpeed = 16
 Config.SpeedPerLevel = 1
@@ -32,11 +29,11 @@ Config.NestXpPerTick = 1
 Config.NestTickSeconds = 5
 
 Config.Stages = {
-	{ name = "해변 모래밭", requiredLevel = 1, targetMinute = 0 },
-	{ name = "사구 언덕", requiredLevel = 5, targetMinute = 4 },
-	{ name = "유사 늪", requiredLevel = 10, targetMinute = 10 }, -- 더블점프가 필요한 구간
-	{ name = "모래폭풍", requiredLevel = 18, targetMinute = 17 },
-	{ name = "피라미드 정상", requiredLevel = 25, targetMinute = 24 },
+	{ name = "해변 모래밭", requiredLevel = 1 },
+	{ name = "사구 언덕", requiredLevel = 5 },
+	{ name = "유사 늪", requiredLevel = 10 }, -- 더블점프가 필요한 구간
+	{ name = "모래폭풍", requiredLevel = 18 },
+	{ name = "피라미드 정상", requiredLevel = 25 },
 }
 
 -- 알 움직임: "roll" 앞으로 굴러가기 | "wobble" 기우뚱 걷기

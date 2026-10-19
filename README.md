@@ -2,7 +2,7 @@
 
 > A Roblox obby where you play as an egg. Every sand tile you step on gives +1 XP, levels make you faster, level 10 unlocks a double jump, and resting in the nest levels you up while idle. Built fully in code with **Rojo + Luau**.
 
-알이 되어 모래 위를 달리는 로블록스 오비입니다. 모래 타일을 밟을 때마다 +1, 레벨이 오르면 빨라지고, 레벨 10부터 더블점프, 둥지에 있으면 방치해도 자랍니다. 다섯 스테이지를 지나 피라미드 꼭대기 황금 둥지에 도착하면 클리어입니다. 처음 하는 사람 기준 약 30분이 목표입니다.
+알이 되어 모래 위를 달리는 로블록스 오비입니다. 모래 타일을 밟을 때마다 +1, 레벨이 오르면 빨라지고, 레벨 10부터 더블점프, 둥지에 있으면 방치해도 자랍니다. 다섯 스테이지를 지나 피라미드 꼭대기 황금 둥지에 도착하면 클리어입니다.
 
 <p align="center">
   <img src="docs/play.gif" alt="공룡알이 모래 타일을 굴러가며 +1을 얻고, 게이트를 지나 다섯 스테이지를 통과하는 30초 플레이 영상" width="480">
@@ -78,12 +78,12 @@ GitHub Actions(`.github/workflows/ci.yml`)가 푸시마다 같은 검사를 돌�
 ## 설계 결정
 
 1. **서버 권한.** XP·레벨·스테이지는 서버만 바꿉니다. 클라이언트는 Attribute를 읽어 화면에 그리고, 게이트도 화면에서만 엽니다. 우회는 서버가 다음 체크포인트에서 레벨로 다시 확인합니다. 타일 판정도 클라이언트 신호가 아니라 서버의 발밑 레이캐스트입니다.
-2. **수치는 Config 한 곳.** 30분 클리어에 맞춘 레벨 곡선을 시뮬레이션으로 정했고(Lv5≈4분, Lv10≈9분, Lv18≈17분, Lv25≈24분), 테스트가 그 값을 지킵니다. 플레이 테스트 뒤에는 `XpBase`·`XpPerLevel` 두 숫자만 고칩니다.
+2. **수치는 Config 한 곳.** 레벨 곡선을 시뮬레이션으로 정했고, 테스트가 그 값을 지킵니다. 플레이 테스트 뒤에는 `XpBase`·`XpPerLevel` 두 숫자만 고칩니다.
 3. **코드로 만든 캐릭터와 맵.** 알 캐릭터와 테스트 맵을 코드로 생성해 바이너리 에셋 없이 저장소만으로 재현됩니다. 장식 맵을 따로 만들 때는 같은 태그(`SandTile`, `Checkpoint`, `Gate`, `WindZone`…)만 붙이면 됩니다.
 
 ## 다음 할 일
 
-- [ ] Studio 플레이 테스트로 30분 목표 확인, 레벨 곡선 조정
+- [ ] Studio 플레이 테스트로 레벨 곡선 조정
 - [x] 30초 플레이 GIF
 - [x] Blender 공룡알 모델(`assets/`)과 굴러가는 움직임
 - [ ] 오프라인 둥지 보상(최대 2시간)

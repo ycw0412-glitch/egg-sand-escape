@@ -1,4 +1,4 @@
--- 첫 스폰부터 황금 둥지까지 걸린 시간(접속한 시간만). 30분 목표가 맞는지 이 기록으로 확인한다.
+-- 첫 스폰부터 황금 둥지까지 걸린 시간(접속한 시간만). 개인 최고 기록을 남긴다.
 local BadgeService = game:GetService("BadgeService")
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")

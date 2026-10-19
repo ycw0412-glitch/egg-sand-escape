@@ -1,5 +1,5 @@
 -- lune run tests/LevelMath.spec.luau
--- 레벨 곡선이 Config의 설계값(30분 클리어)과 어긋나지 않는지 확인한다.
+-- 레벨 곡선이 Config의 설계값과 어긋나지 않는지 확인한다.
 local process = require("@lune/process")
 
 local Config = require("../src/shared/Config")
