@@ -13,3 +13,6 @@ roblox.yml
 # OS
 .DS_Store
 Thumbs.db
+
+# Blender 자동 백업
+*.blend1
