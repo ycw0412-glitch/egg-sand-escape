@@ -39,6 +39,10 @@ Config.Stages = {
 	{ name = "피라미드 정상", requiredLevel = 25, targetMinute = 24 },
 }
 
+-- 알 움직임: "roll" 앞으로 굴러가기 | "wobble" 기우뚱 걷기
+Config.EggMotion = "roll"
+Config.EggRollRadius = 1.45 -- 굴러가는 속도 계산용 평균 반지름(스터드)
+
 -- 레벨에 따라 바뀌는 알 껍질 색(RGB)
 Config.EggShells = {
 	{ minLevel = 1, rgb = { 250, 243, 224 } },
